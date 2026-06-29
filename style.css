@@ -31,10 +31,11 @@
 
  }
  .main-content{
-    height: 90vh;
+    
     background-color: #2a2a2a;
     border:1px solid #3a3a3a;
      border-radius:16px;
+     padding: 40px;
  }
 
 .profile{
@@ -123,6 +124,9 @@
 
  #navigation{
      padding: 40px 30px;
+      border-bottom: 2px solid #3a3a3a;
+     margin-bottom: 20px;
+     padding-bottom: 20px;
 
  }
  nav {
@@ -136,8 +140,64 @@
      color: #a0a0a0;
      font-weight: 500;
      transition: color 0.3s ease;
+    
 
  }
  .active, nav a:hover{ 
     color: #ffbf00;
+ } 
+ .heading{
+    color: #e0e0e0;
+    font-size: 2rem ;
+    margin-bottom: 15px;
+ } 
+ .line{
+     width: 60px;
+     height: 5px;
+     background-color: #ffbf00 ;
+     margin-bottom: 15px;
+ } 
+ .content{
+     text-align: justify ;
+     color: #a0a0a0;
+
+ } 
+
+ #about{
+    margin-bottom: 40px;
+ } 
+
+
+ .grid-container{
+
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(120px,1fr));
+    gap: 40px;
+
  }
+.item{ 
+    padding: 20px ; 
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease ;
+
+}
+
+
+ .item img{
+  height: 48px;
+  width: 48px;
+  filter:invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+ }
+.item h3{
+   font-size: 1rem;
+   font-weight:500rem;
+
+}
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
