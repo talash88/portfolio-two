@@ -206,6 +206,7 @@
  }
  .edtech{
     position:relative;
+    margin-top:20px;
  }
  
   .year{
@@ -277,4 +278,12 @@
     position: relative;
     padding-left: 20px;
     margin-bottom: 30px;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px;
+
+
 }
